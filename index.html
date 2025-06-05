@@ -21,13 +21,36 @@
                 <p>"Front-end developer and a love for anime."</p>
             </div>
             <div class="buttons">
-                <button>Github</button>
-                <button>BlueSky</button>
-                <button>Portfolio</button>
-                <button>MyAnimeList</button>
-                <button>Reddit</button>
+                <button id="githubBtn">Github</button>
+                <button id="blueskyBtn">BlueSky</button>
+                <button id="portfolioBtn">Portfolio</button>
+                <button id="malBtn">MyAnimeList</button>
+                <button id="redditBtn">Reddit</button>
             </div>
         </div>
     </main>
+
+    
+<script>
+    document.getElementById("githubBtn").addEventListener("click", () => {
+        window.open("https://github.com/lorena-domingos", "_blank");
+    });
+
+    document.getElementById("blueskyBtn").addEventListener("click", () => {
+        window.open("https://bsky.app/profile/lorena-domingos.bsky.social", "_blank");
+    });
+
+    document.getElementById("portfolioBtn").addEventListener("click", () => {
+        window.open("https://lorenadomingos.netlify.app/", "_blank");
+    });
+
+    document.getElementById("malBtn").addEventListener("click", () => {
+        window.open("https://myanimelist.net/profile/lorenchan", "_blank");
+    });
+
+    document.getElementById("redditBtn").addEventListener("click", () => {
+        window.open("https://www.reddit.com/user/Less_Veterinarian851/", "_blank");
+    });
+</script>
 </body>
 </html>
