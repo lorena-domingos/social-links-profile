@@ -1,2 +1,49 @@
 @use 'layout';
+@use 'variables' as *;
 
+img {
+    margin-top: 40px;
+    width: 35%;
+    border-radius: 100px;
+}
+
+.main_text {
+    margin-top: 20px;
+    line-height: 30px;
+
+    h1 {
+        font-size: 1.3rem;
+        color: $text-color;
+    }
+
+    p:first-of-type {
+        color: $accent-color;
+    }
+
+    p:last-child {
+        margin-top: 10px;
+        font-size: .9375rem;
+        color: $text-color;
+    }
+}
+
+.buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+        padding: 14px 100px 14px 100px;
+        border: none;
+        border-radius: 0.5em;
+        background-color: $gray-700;
+        color: $text-color;
+        font-weight: 600;
+    }
+
+    button:hover {
+        background-color: $accent-color;
+        color: $gray-900;
+    }
+}

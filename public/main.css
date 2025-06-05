@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -18,8 +19,55 @@ main {
 
 .card {
   width: 340px;
-  height: 550px;
+  height: 590px;
   background-color: hsl(0, 0%, 12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+img {
+  margin-top: 40px;
+  width: 35%;
+  border-radius: 100px;
+}
+
+.main_text {
+  margin-top: 20px;
+  line-height: 30px;
+}
+.main_text h1 {
+  font-size: 1.3rem;
+  color: hsl(0, 0%, 100%);
+}
+.main_text p:first-of-type {
+  color: hsl(349, 94%, 57%);
+}
+.main_text p:last-child {
+  margin-top: 10px;
+  font-size: 0.9375rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.buttons button {
+  padding: 14px 100px 14px 100px;
+  border: none;
+  border-radius: 0.5em;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+}
+.buttons button:hover {
+  background-color: hsl(349, 94%, 57%);
+  color: hsl(0, 0%, 8%);
 }
 
 /*# sourceMappingURL=main.css.map */
